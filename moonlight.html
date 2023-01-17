@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./moonlight.css">
+</head>
+<body>
+  <section>
+    <img src="./media/bg.jpg" id="bg">
+    <img src="./media/moon.png" id="moon">
+    <img src="./media/mountain.png" id="mountain">
+    <img src="./media/road.png" id="road">
+    <h2 id="text">Moon light</h2>
+  </section>
+
+  <div id="tales">
+    <h3>Tales by Moonlight</h3>
+    <p>Once upon a time, in the animal kingdom, there lived an animal called the tortoise. The tortoise
+      is married to Yanribo. The tortoise also has a concubine known as Osemi.
+        There is a woman that fries 'akara' (bean cakes) by the road side in the neighborhood.
+        Her bean cakes are very delicious and many people always line up to buy bean cakes in the mornings
+        from the woman. Anytime the tortoise is passing by the place the woman is selling 'akara',
+        he is always enticed by the aroma of the bean cake and would wish to buy some, but he did not have any money. 
+        He envied those who buy the woman's akara every morning. <br> <br> One day he told Yaribo, his wife about the woman's
+        bean cakes. He said they always make his mouth water but that he does not have money to buy some.
+        He told the wife, "give me some money to buy akara or I will go to Osemi's house to collect money from her". 
+        Yanribo replied, "I don't have money, but here is the little money I have". She gave him a penny.
+        He took the money with his cap on his head and went straight to where the woman was selling bean cakes. 
+        When he got there, he met a lot of people waiting to buy bean cakes. He was discouraged but decided to
+        wait for his turn, so he stayed on the queue. When the crowd has lessened and it was nearly his turn to buy bean
+        cake, suddenly,somebody called the woman selling bean cake that she should stop everything she was doing oh!,that
+        her attention was needed at home and that she had some visitors. The woman now appealed to the tortoise to help
+        her watch over the bean cakes on the fire so that they don't get burnt. The tortoise accepted and was very
+        happy to watch The moment the woman left, he started eating the bean cakes. <br> <br> As he was frying, he was eating it
+        with relish. He said to himself, "I will eat and eat and eat and I will keep some in my cap".He had not finished
+        talking to himself when he saw the bean cake woman from afar. He immediately began to put some bean cakes
+        in his cap and wore the cap on his head. The bean cakes were hot and he began twisting his neck. 
+        When the woman arrived, she thanked the tortoise and also gave him some bean cakes in appreciation.
+        She observed that the tortoise was twisting his neck vigorously, so she asked, "is anything wrong with you?"
+        He said nothing was wrong and he wanted to leave, so he left. The tortoise wanted to remove the bean cakes 
+        from his cap on the road, but he couldn't because people were greeting him and exchanging pleasantries with him
+        as he was going. He then decided to go to Osemi, his concubine's house. When he got there, he met Osemi, and her relatives.
+        He greeted everyone and was asked to sit down. <br> <br> After he sat down, he was twisting his neck vigorously. When they asked him
+        what was wrong, he replied, " nothing". He said he was okay and would like to take his leave. Osemi's relatives now said,
+         "the way you are twisting your neck is too much", then his concubine went and removed the cap from the head of the tortoise.
+         Behold! To the surprise of everyone, bean cakes dropped from his head, his hair was burnt and he left there with shame.
+         That is the reason why the tortoise has no hair on his head and is bald till today. <br> <br> 
+         
+         Moral of this folktale is, next time you want to steal food, bring a bag along 😂😂
+        </p>
+  </div>
+
+  <script type="text/javascript">
+    let bg = document.getElementById("bg");
+    let moon = document.getElementById("moon");
+    let mountain = document.getElementById("mountain");
+    let road = document.getElementById("road");
+    let text = document.getElementById("text");
+
+    window.addEventListener('scroll', function(){
+      var value = window.scrollY;
+
+      bg.style.top =  value * 0.5 + 'px';
+      moon.style.left =  -value * 0.5 + 'px';
+      mountain.style.top =  -value * 0.15 + 'px';
+      road.style.top =  value * 0.15 + 'px';
+      text.style.top =  value * 1 + 'px';
+    })
+
+  </script>
+</body>
+</html>
